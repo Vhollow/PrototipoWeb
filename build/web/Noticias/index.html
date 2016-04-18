@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css" type="text/css"/>
+
+        <title>Pagina de prueba 3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../js/banner.js"></script>
+
+    </head>
+    <body onload="alternar_banner()">
+    
+        <header >
+            <img src="../Imagenes/logo.png" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../Sobre_nosotros/index.html">Sobre nosotros</a></li>
+                    <li><a href="">Noticias</a></li>
+                    <li><a href="../Actividades/index.html">Actividades</a></li>
+                    <li><a href="#">Apuntate/Donaciones</a></li>
+                    <li><a href="#">Login miembros</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="content2">
+            <div id="lineaPrincipal">Noticia destacada<hr id="linea3"/></div>
+            <div id="NotPrincipal">
+                <div id="ImgNotPrincipal"> 
+                    <img src="../Imagenes/i1.png" id="Izq" alt="Flecha" onclick="izquierda()" onmousedown="ci()" onmouseup="ci2()">
+                    <img src="../Imagenes/d1.png" id="Der" alt="Flecha" onclick="derecha()" onmousedown="cd()" onmouseup="cd2()">
+                    <img src="#" alt="Imagen" name="banner"id="centro">
+                </div>
+                <div id="TexPrincipal"></div>
+            </div>
+            <div id="lineanoticias2">Noticias<hr id="linea4"/></div>
+            <div class="contenedor" id="cont3">
+                <div class="cuadro2" >
+                    <img src="../Imagenes/img3.png">
+                    <div class="footcuadro"><h4>Titulo noticia</h4></div>
+                </div>
+                <div class="cuadro2" >
+                    <img src="../Imagenes/img3.png">
+                    <div class="footcuadro"><h4>Titulo noticia</h4></div>
+                </div>
+                <div class="cuadro2" >
+                    <img src="../Imagenes/img3.png">
+                    <div class="footcuadro"><h4>Titulo noticia</h4></div>
+                </div>
+                <div class="cuadro2" >
+                    <img src="../Imagenes/img3.png">
+                    <div class="footcuadro"><h4>Titulo noticia</h4></div>
+                </div>
+            </div>
+        </section>
+        <footer>Pie de pagina</footer>
+    </body>
+</html>
