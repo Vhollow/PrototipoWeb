@@ -11,59 +11,51 @@ and open the template in the editor.
         <title>Pagina de prueba 3</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/banner.js"></script>
+
     </head>
-    <body>
+    <body onload="alternar_banner()">
+    
         <header >
             <img src="Imagenes/logo.png" alt="Logo">
             <nav>
                 <ul>
-                    <li><a href="">Inicio</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
-                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="">Noticias</a></li>
                     <li><a href="actividades.html">Actividades</a></li>
                     <li><a href="apunt_donacion.html">Apuntate/Donaciones</a></li>
                     <li><a href="#">Login miembros</a></li>
                 </ul>
             </nav>
         </header>
-        <section id="content">
-            <div id="ImgPrincipal"><img src="Imagenes/img1.jpg" alt="Imagen"></div>
-            <div id="lineanoticias"><h2>Noticias</h2></div>
-            <div class="contenedor" id="cont1">
-                <div class="cuadro" >
-                    <img src="Imagenes/img3.png">
-                    <div class="footcuadro"><h4>Titulo noticia</h4></div>
+        <section id="content2">
+            <div id="lineaPrincipal"><h2>Noticia destacada</h2></div>
+            <div id="NotPrincipal">
+                <div id="ImgNotPrincipal"> 
+                    <img src="Imagenes/i1.png" id="Izq" alt="Flecha" onclick="izquierda()" onmousedown="ci()" onmouseup="ci2()">
+                    <img src="Imagenes/d1.png" id="Der" alt="Flecha" onclick="derecha()" onmousedown="cd()" onmouseup="cd2()">
+                    <img src="#" alt="Imagen" name="banner"id="centro">
                 </div>
-                <div class="cuadro" >
-                    <img src="Imagenes/img3.png">
-                    <div class="footcuadro"><h4>Titulo noticia</h4></div>
-                </div>
-                <div class="cuadro" >
-                    <img src="Imagenes/img3.png">
-                    <div class="footcuadro"><h4>Titulo noticia</h4></div>
-                </div>
-                <div class="cuadro" >
-                    <img src="Imagenes/img3.png">
-                    <div class="footcuadro"><h4>Titulo noticia</h4></div>
-                </div>
+                <div id="TexPrincipal"></div>
             </div>
-            <div id="lineaactividades"><h2>Actividades</h2></div>
-            <div class="contenedor" id="cont2">
-                <div class="cuadro" >
+            <div id="lineanoticias2"><h2>Noticias</h2></div>
+            <div class="contenedor" id="cont3">
+                <div class="cuadro2" >
                     <img src="Imagenes/img3.png">
-                    <div class="footcuadro"><h4>Titulo actividad</h4></div>
+                    <div class="footcuadro"><h4>Titulo noticia</h4></div>
                 </div>
-                <div class="cuadro" >
+                <div class="cuadro2" >
                     <img src="Imagenes/img3.png">
-                    <div class="footcuadro"><h4>Titulo actividad</h4></div>
+                    <div class="footcuadro"><h4>Titulo noticia</h4></div>
                 </div>
-                <div class="cuadro" >
+                <div class="cuadro2" >
                     <img src="Imagenes/img3.png">
-                    <div class="footcuadro"><h4>Titulo actividad</h4></div>
+                    <div class="footcuadro"><h4>Titulo noticia</h4></div>
                 </div>
-                <div class="cuadro" >
+                <div class="cuadro2" >
                     <img src="Imagenes/img3.png">
-                    <div class="footcuadro"><h4>Titulo actividad</h4></div>
+                    <div class="footcuadro"><h4>Titulo noticia</h4></div>
                 </div>
             </div>
         </section>

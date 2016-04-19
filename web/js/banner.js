@@ -7,13 +7,13 @@
 var array_imagen;
 array_imagen = new Array(4) ;
 array_imagen[0] = new Image(120,41) ;
-array_imagen[0].src = "../Imagenes/img1.jpg" ;
+array_imagen[0].src = "Imagenes/img1.jpg" ;
 array_imagen[1] = new Image(120,41) ;
-array_imagen[1].src = "../Imagenes/img2.jpg" ;
+array_imagen[1].src = "Imagenes/img2.jpg" ;
 array_imagen[2] = new Image(120,41) ;
-array_imagen[2].src = "../Imagenes/img3.png"; 
+array_imagen[2].src = "Imagenes/img3.png"; 
 array_imagen[3] = new Image(120,41) ;
-array_imagen[3].src = "../Imagenes/img4.jpg";
+array_imagen[3].src = "Imagenes/img4.jpg";
 
 //variable para llevar la cuenta de la imagen siguiente 
 contador = 0 ;
