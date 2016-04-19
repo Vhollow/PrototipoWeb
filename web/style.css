@@ -48,7 +48,7 @@ nav ul li a {
 }
 			
 nav ul li a:hover {
-    background: #ff33ff;
+    background: #ffff33;
 }
 
 a{
@@ -96,7 +96,7 @@ h1{
     top:30em;
     position:absolute;
     text-align: center;
-    background-color: #ff33ff;
+    background-color: #ffff33;
     border: 1px solid black;
 }
 #linea1{
@@ -113,7 +113,7 @@ h1{
     top: 55.5em;
     position: absolute;
     text-align: center;
-    background-color: #ff33ff;
+    background-color: #ffff33;
     border: 1px solid black;
 }
 #linea2{
@@ -164,7 +164,7 @@ h1{
     height: 30px;
     width: 100%;
     text-align: center;
-    background-color: #ff33ff;
+    background-color: #ffff33;
     border: 1px solid black;
 }
 .linea3{
@@ -211,7 +211,7 @@ h1{
     width: 90%;
     top:36em;
     position:absolute;
-    background-color: #ff33ff;
+    background-color: #ffff33;
     border: 1px solid black;
 }
 .cuadro2 {
