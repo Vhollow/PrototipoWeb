@@ -2,7 +2,7 @@ body{
     padding: 0;
     padding-top: 8em;
     margin: 0;
-    background-color:#ffffff;
+    background-image: url("Fondos/fondo-huellas.jpg");
 }
 h2{
     margin-bottom: 1px;
@@ -67,10 +67,14 @@ footer {
 }
 img{
     height: inherit;
-    width: inherit;
+    width: 100%;
 }
 h1{
     text-align: center;
+}
+#cuerpo{
+    height: 75em;
+    width: 100%;
 }
 #content{
     width: 90%;
@@ -89,6 +93,20 @@ h1{
     margin: 20px auto;
     left: 0;
 }
+#columnaFiltro{
+    width: 20%;
+    height: 71em;
+    left: 0;
+    position: absolute;
+}
+#content3{
+    width: 70%;
+    height: 71em;
+    padding-top: 0px;
+    display: block;
+    position: absolute;
+    right: 0;
+}
 #lineanoticias{
     margin-top: 30px;
     height: 30px;
@@ -98,14 +116,8 @@ h1{
     text-align: center;
     background-color: #ffff33;
     border: 1px solid black;
+    border-radius: 2px;
 }
-#linea1{
-    width: 1120px;
-    height: 2px;
-    background-color: black;
-    float: right;
-}
-
 #lineaactividades{
     margin-top: 50px;
     height: 30px;
@@ -115,23 +127,7 @@ h1{
     text-align: center;
     background-color: #ffff33;
     border: 1px solid black;
-}
-#linea2{
-    width: 1090px;
-    height: 2px;
-    background-color: black;
-    float: right;
-}
-
-.cuadro {
-    width: 15.5em;
-    height:15.5em;
-    position: relative;
-    background-color: white;
-    background-size: 15.5em;
-    margin-left: 50px;
-    float:left;
-    border: 1px solid black;
+    border-radius: 2px;
 }
 .contenedor{
     margin-top: 30px;
@@ -142,15 +138,37 @@ h1{
 }
 #cont1{
     top:37em;
-    position: absolute;
 }
 #cont2{
     top:64em;
-    position: absolute;
 }
 #cont3{
     top:40em;
-    position: absolute;
+}
+#cont4{
+    top: 3em;
+}
+.cuadro {
+    width: 20%;
+    height:15.5em;
+    position: relative;
+    background-color: white;
+    background-size: 15.5em;
+    margin-left: 4.5%;
+    float:left;
+    border: 1px solid black;
+}
+
+.cuadro2 {
+    width: 40%;
+    height:15.5em;
+    position: relative;
+    background-color: white;
+    background-size: 15.5em;
+    margin-top: 3em;
+    margin-left: 7.5%;
+    float:left;
+    border: 1px solid black;
 }
 #ImgPrincipal{
     margin-left: 50px;
@@ -167,13 +185,15 @@ h1{
     background-color: #ffff33;
     border: 1px solid black;
 }
-.linea3{
-    width: 100%;;
-    height: 2px;
-    background-color: black;
-    float: right;
+#lineaPrincipal2{
+    margin-top: 30px;
+    height: 30px;
+    width: 90%;
+    text-align: center;
+    background-color: #ffff33;
+    border: 1px solid black;
 }
-#NotPrincipal{
+.NotPrincipal{
     margin-top: 2em;
     margin-left: 7%;
     width: 90%;
@@ -204,27 +224,6 @@ h1{
     height: inherit;
     padding-left: 1em;
 }
-#lineanoticias2{
-    margin-top: 30px;
-    text-align: center;
-    height: 30px;
-    width: 90%;
-    top:36em;
-    position:absolute;
-    background-color: #ffff33;
-    border: 1px solid black;
-}
-.cuadro2 {
-    width: 30.5em;
-    height:15.5em;
-    position: relative;
-    background-color: white;
-    background-size: 15.5em;
-    margin-top: 3em;
-    margin-left: 6em;
-    float:left;
-    border: 1px solid black;
-}
 #Izq{
     width: 30px;
     height: 30px;
@@ -243,8 +242,29 @@ h1{
     position: relative;
     z-index: 2;
 }
+
+#lineanoticias2{
+    margin-top: 30px;
+    text-align: center;
+    height: 30px;
+    width: 90%;
+    top:36em;
+    position:absolute;
+    background-color: #ffff33;
+    border: 1px solid black;
+}
+#lineaactividades2{
+    margin-top: 30px;
+    height: 30px;
+    width: 90%;
+    top: 28em;
+    position: absolute;
+    text-align: center;
+    background-color: #ffff33;
+    border: 1px solid black;
+}
 .footcuadro{
-	width: inherit;
+	width: 100%;
 	height: 5em;
 	position: absolute;
 	background-color: #dddddd;
