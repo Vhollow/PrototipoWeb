@@ -30,7 +30,31 @@ and open the template in the editor.
             </nav>
         </header>
         <div id="cuerpo">
-        <div id="columnaFiltro"></div>
+            <div id="columnaFiltro">
+                <div id="filtros">
+                    <div class="selector"><h4>FILTRAR POR:</h4></div>
+                    <div class="selector">
+                    Lugar:<select>
+                        <option value="0">Madrid</option>
+                        <option value="1">Valladolid</option>
+                        <option value="2">Barcelona</option>
+                        <option value="3">Sevilla</option>
+                    </select>
+                    </div>
+                    <div class="selector">
+                    Tipo:<select>
+                        <option value="0">Mercadillo</option>
+                        <option value="1">Recogida de bienes</option>
+                        <option value="2">Actuacion benéfica</option>
+                    </select>
+                    </div>
+                    <div class="selector"><h4>BUSQUEDA:</h4></div>
+                    <div class="selector">
+                        <input type="text" value="" maxlength="30"/>
+                        <input type="submit" value="Buscar"/>
+                    </div>
+                </div>
+            </div>
         <section id="content3">
             <div id="lineaPrincipal2"><h2>Actividades</h2></div>
             <div class="contenedor" id="cont4">
