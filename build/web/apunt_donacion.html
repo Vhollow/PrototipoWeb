@@ -7,10 +7,12 @@ and open the template in the editor.
 <html>
     <head>
         <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="stylesheet" href="pruebacss.css" type="text/css"/>
 
-        <title>Pagina de prueba 3</title>
+        <title>Asociacion para la defensa de los animales</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/desplegable.js"></script>
     </head>
     <body>
         <header >
@@ -21,13 +23,93 @@ and open the template in the editor.
                     <li><a href="">Sobre nosotros</a></li>
                     <li><a href="noticias.html">Noticias</a></li>
                     <li><a href="actividades.html">Actividades</a></li>
-                    <li><a href="" style="background-color: #ff33ff">Apuntate/Donaciones</a></li>
-                    <li><a href="#">Login miembros</a></li>
+                    <li><a href="" style="background-color: white">Apuntate/Donaciones</a></li>
+                    <li><div class="dropdown">
+                        <a onclick="myFunction()" class="dropbtn">Login miembros</a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <form name="login" action="admin/area-usuario.html" method="POST">
+                            <input type="text" class="input-login" name="usuario"  maxlength="50">
+                            <input type="password" class="input-login" name="contrasena" maxlength="50">
+                            <a href="admin/area-usuario.html"><input type="submit" value="Login"  name="enviar" /></a>
+                            </form>
+                        </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </header>
-        <section id="content">
+        <section class="content" id="content">
+            <div class="clearflx">&nbsp</div>
+            <div class="cuadro3">
+            <h2>Inscríbete en nuestra asociación</h2>
+            <span>¿Te gustaría colaborar con la asociación para la defensa de los animales?
+            Pues tan solo tienes que rellenar este formulario y ya podrás formar parte
+            de nuestra comunidad donde disfrutamos ayudando a que los animales puedan defenderse =)</span>
+            <br><br><br>
+            <form name="registro" action="form" method="POST">
+                
+                <label class="label">Nombre<span class="asterisco">*</span></label>
+                <input type="text" name="nombre"  maxlength="50"><br>
+                <label class="label">Apellidos<span class="asterisco">*</span></label>
+                <input type="text" name="apellidos"   maxlength="50"><br>
+                <label class="label">Teléfono<span class="asterisco">*</span></label>
+                <input type="text" name="telefono" onkeypress='return event.charCode >= 48 
+                            && event.charCode <= 57'  maxlength="9"><br>
+                <label class="label">Correo electrónico<span class="asterisco">*</span></label>
+                <input type="text" name="correo"  maxlength="50"><br>
+                <label class="label">Dirección<span class="asterisco">*</span></label>
+                <input type="text" name="direccion"  maxlength="50"><br>
+                <label class="label">Población<span class="asterisco">*</span></label>
+                <input type="text" name="poblacion"  maxlength="50"><br>
+                <label class="label">Provincia<span class="asterisco">*</span></label>
+                <input type="text" name="provincia"  maxlength="50"><br>
+                <label class="label">Código Postal<span class="asterisco">*</span></label>
+                <input type="text" name="cpostal" onkeypress='return event.charCode >= 48
+                            && event.charCode <= 57' maxlength="5"><br>
+                <label class="label">Sexo</label>
+                <select name="sexo">
+                    <option>------</option>
+                    <option>Hombre</option>
+                    <option>Mujer</option>
+                    <option>Otro</option>
+                    
+                </select><br>
+                
+                
+                <label class="label">Fecha de nacimiento<span class="asterisco">*</span></label>
+                <input type="date" name="direccion"   ><br>
+          <label class="label">DNI / NIF<span class="asterisco">*</span></label>
+                <input type="text" name="dni"  maxlength="9"><br>
+                
+          <label class="label">Contraseña<span class="asterisco">*</span></label>
+                <input type="password" name="contrasena"  maxlength="50"><br>
+          <label class="label">Repite Contraseña<span class="asterisco">*</span></label>
+                <input type="password" name="repContrasena"  maxlength="50"><br>
+          <label class="label"></label>     
+          <input type="submit" value="Registrarse" class="form" name="enviar" />
+        </form>
+            </div>
+            <div class="cuadro3">
+                <h2>Realiza una donación</h2>
+                <span>Nuestra asociación no acepta dinero de entidades públicas o privadas, pero nuestros
+                    actos suponen un gasto.<br>
+                    Por eso te agradeceríamos mucho si nos aportas cualquer cantidad de dinero para
+                    ayudarnos a seguir existiendo y dar voz a los que no la tienen.<br>
+                    GRACIAS
+                </span><br><br>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----...[Encrypted message]...-----END PKCS7-----">
+
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+
+                </form>
+            </div>
+            <div class="clearflx">&nbsp</div>
         </section>
+        
         <footer>Pie de pagina</footer>
     </body>
 </html>

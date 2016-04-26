@@ -7,11 +7,13 @@ and open the template in the editor.
 <html>
     <head>
         <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="stylesheet" href="pruebacss.css" type="text/css"/>
 
-        <title>Pagina de prueba 3</title>
+        <title>Asociacion para la defensa de los animales</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/banner.js"></script>
+        <script src="js/desplegable.js"></script>
 
     </head>
     <body onload="alternar_banner()">
@@ -23,9 +25,19 @@ and open the template in the editor.
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
                     <li><a href="noticias.html">Noticias</a></li>
-                    <li><a href="" style="background-color: #ff33ff">Actividades</a></li>
+                    <li><a href="" style="background-color: white">Actividades</a></li>
                     <li><a href="apunt_donacion.html">Apuntate/Donaciones</a></li>
-                    <li><a href="#">Login miembros</a></li>
+                    <li><div class="dropdown">
+                        <a onclick="myFunction()" class="dropbtn">Login miembros</a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <form name="login" action="admin/area-usuario.html" method="POST">
+                            <input type="text" class="input-login" name="usuario"  maxlength="50">
+                            <input type="password" class="input-login" name="contrasena" maxlength="50">
+                            <input type="submit" value="Login"  name="enviar" />
+                            </form>
+                        </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -35,33 +47,36 @@ and open the template in the editor.
                     <div class="selector"><h4>FILTRAR POR:</h4></div>
                     <div class="selector">
                     Lugar:<select>
-                        <option value="0">Madrid</option>
+                        <option value="0">- - - - - -</option>
                         <option value="1">Valladolid</option>
                         <option value="2">Barcelona</option>
                         <option value="3">Sevilla</option>
+                        <option value="4">Madrid</option>
                     </select>
                     </div>
                     <div class="selector">
                     Tipo:<select>
-                        <option value="0">Mercadillo</option>
+                        <option value="0">- - - - - -</option>
                         <option value="1">Recogida de bienes</option>
-                        <option value="2">Actuacion benéfica</option>
+                        <option value="2">Actuación benéfica</option>
+                        <option value="3">Mercadillo</option>
+                        <option value="4">Manifestación</option>
                     </select>
                     </div>
                     <div class="selector"><h4>BUSQUEDA:</h4></div>
                     <div class="selector">
-                        <input type="text" value="" maxlength="30"/>
-                        <input type="submit" value="Buscar"/>
+                        <input type="text" value="" maxlength="30" />
+                        <input type="submit" value="Buscar" />
                     </div>
                 </div>
             </div>
-        <section id="content3">
+        <section class="content" id="content3">
             <div id="lineaPrincipal2"><h2>Actividades</h2></div>
             <div class="contenedor" id="cont4">
-                <div class="cuadro2" >
-                    <img src="Imagenes/img3.png">
-                    <div class="footcuadro"><h4>Titulo actividad</h4></div>
-                </div>
+                <a href="Actividades/actividad-contra-transporte-animales-experimentacion.html"><div class="cuadro2" >
+                    <img src="Imagenes/monos-jaula.jpg">
+                    <div class="footcuadro"><h4>Ayúdanos a que AIR France deje de transportar animales para experimentación</h4></div>
+                    </div></a>
                 <div class="cuadro2" >
                     <img src="Imagenes/img3.png">
                     <div class="footcuadro"><h4>Titulo actividad</h4></div>

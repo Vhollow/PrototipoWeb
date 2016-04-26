@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css" type="text/css"/>
+        <link rel="stylesheet" href="../pruebacss.css" type="text/css"/>
+
+        <title>Vida emocional animales de granja</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+    </head>
+    <body >
+    
+        <header >
+            <img src="../Imagenes/logo.png" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../sobre_nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="../noticias.html" style="background-color: white">Noticias</a></li>
+                    <li><a href="../actividades.html">Actividades</a></li>
+                    <li><a href="../apunt_donacion.html">Apuntate/Donaciones</a></li>
+                    <li><div class="dropdown">
+                        <a onclick="myFunction()" class="dropbtn">Login miembros</a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <form name="login" action="admin/area-usuario.html" method="POST">
+                            <input type="text" class="input-login" name="usuario"  maxlength="50">
+                            <input type="password" class="input-login" name="contrasena" maxlength="50">
+                            <input type="submit" value="Login"  name="enviar" />
+                            </form>
+                        </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="content" id="content4">
+            <div class="contenido">
+                <span class="titulo">La profunda (y aún desconocida) vida emocional de los animales de granja</span>
+                <br>
+				<h3>Pollos</h3>
+                <p>
+                     <img src="../Imagenes/vaca_cerdo_pollo.jpg" alt="vacas,cerdos y pollos"  class="imagen-noticia">
+					 Haz una prueba: piensa en un pollo; ¿en qué piensas exactamente? Hay probabilidades de que sea en 
+					 esos animales que vienen en bandejas en el supermercado o que dan vueltas mientras se asan. Pero 
+					 estos frágiles y sensibles animales tienen algunos secretos que hoy vamos a descubrir.
+					<br>
+					<br>
+					«Los pollos y las gallinas muestran un comportamiento social sofisticado; pueden reconocer y recordar
+					a más de 100 compañeros. Tienen más de 30 tipos diferentes de vocalizaciones».
+					<br>
+					Dr. Joy Mench.
+					<br>
+					Profesor y director. Centro para el Bienestar Animal.
+					<br>
+					Universidad de California.
+				</p>
+                
+				<h3>Vacas</h3>
+                <p>
+					Las vacas son animales sociables e inteligentes a quienes les gusta pasar su tiempo 
+					con otras compañeras. Algunas son tímidas, otras aventureras y sociables, otras recelosas
+					de los suyos, ¡justo como nosotros!
+					<br>
+					<br>
+					La relación entre la madres y la cría son especialmente fuertes, y empieza cuando la madre se aparta del 
+					grupo para dar a luz a su cría. Una vez nacida, la madre empieza a lamerla y con ello se va familiarizando 
+					con su olor. A las madres les gusta dormir junto a sus hijos, cuidarlos y protegerlos.
+				</p>
+
+				<h3>Cerdos</h3>	
+                <p>    
+					Los cerdos son animales muy limpios que evitan ensuciar las zonas donde viven, si disponen 
+					del espacio suficiente tienen cuidado de no manchar las zonas donde comen o duermen. Si se bañan 
+					en barro o lodo es simplemente para mantener su temperatura corporal baja ya que estos animales 
+					son incapaces de sudar, además esta actividad contribuye a eliminar parásitos de la piel.
+					<br>
+					<br>
+					A menudo se dice que los cerdos tienen una inteligencia equivalente a la de un niño de tres años;
+					lo cierto es que diferentes estudios demuestran que tienen una gran memoria.
+					<br>
+					<br>
+					Además sueñan, reconocen sus nombres e incluso son capaces de «representaciones abstractas», 
+					siendo capaces de grabar una imagen en su mente durante mucho tiempo.
+				</p>
+				
+				<h3>Gallinas</h3>
+                <p>    
+					Las gallinas son animales sensibles e inteligentes además de muy sociables, seres a quienes les 
+					gusta pasar el día limpiándose y acicalando sus plumas, picoteando, tomando el sol o dándose baños
+					de arena.
+					<br>
+					<br>
+					Muchos creen que la protección de las crías es un atributo propio de los mamíferos, pero aves como
+					las gallinas muestran que no hay nada más alejado de la realidad. Las madres emiten ruidos a los que
+					sus hijos no nacidos responden desde dentro los huevos. Las gallinas protegen a sus pequeños, y 
+					prefieren tener nidos privados en áreas protegidas.
+					<br>
+					<br>
+					¿No son maravillosos todos estos animales? Si les damos la oportunidad, crean vínculos con nosotros 
+					rápidamente, ¡justo como nuestros queridos perros y gatos!
+					<br>
+					<br>
+					Si quieres ayudar a estos increíbles animales puedes hacerlo consumiendo alternativas a la carne, huevos
+					y leche más a menudo, o incluso completamente. ¡Cada vez más personas lo hacen! ¿A quién no le gusta 
+					ayudar a seres tan adorables?
+					<br>
+					<br>
+					Tienes toda la información que necesitas para dar los primeros pasos en las maravillosas websites Gastronomía
+					Vegana y Danza de Fogones. ¡Ánimo y no olvides contarnos en nuestras redes sociales cómo te va en el intento!
+				</p>
+
+                 <br><br>
+                    
+                   
+				<h4>Realiza un comentario</h4>
+                    <form name="comentario" action="#" method="POST" >
+                        
+                            
+                        <label class="label">Nombre<span class="asterisco">*</span></label>
+                        <input type="text" name="nombre"  maxlength="50"><br>
+                        <textarea name="comentario" rows="5" cols="100">Introduce un comentario</textarea><br>
+                        <input type="submit" name="enviar" value="Enviar comentario">
+                    </form>
+
+                    
+                
+                
+            </div>
+            <div class="block_bloque block" >
+                <div class="header_block block">
+                    <h3>Últimas Noticias</h3>
+                </div>
+                
+                <a href="noticia-basta-maltrato-granjas.html">Basta de maltrato en las granjas de animales</a><br>
+                <a href="noticia-vida-emocional-animales-granja.html">La profunda (y aún desconocida) vida emocional de los animales de granja </a><br>
+                <a href="#"> sfvevfedfgawfgvawfv</a><br>
+                <a href="#"> sfvevfedfgawfgvawfv</a><br>
+            </div>
+            
+            
+        </section>
+        <footer>Pie de pagina</footer>
+    </body>
+</html>

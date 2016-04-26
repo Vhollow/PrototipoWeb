@@ -7,52 +7,65 @@ and open the template in the editor.
 <html>
     <head>
         <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="stylesheet" href="pruebacss.css" type="text/css"/>
 
-        <title>Pagina de prueba 3</title>
+        <title>Asociacion para la defensa de los animales</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/desplegable.js"></script>
     </head>
     <body>
         <header >
             <img src="Imagenes/logo.png" alt="Logo">
             <nav>
                 <ul>
-                    <li><a href="" style="background-color: #ff33ff">Inicio</a></li>
+                    <li><a href="" style="background-color: white">Inicio</a></li>
                     <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
                     <li><a href="noticias.html">Noticias</a></li>
                     <li><a href="actividades.html">Actividades</a></li>
                     <li><a href="apunt_donacion.html">Apuntate/Donaciones</a></li>
-                    <li><a href="#">Login miembros</a></li>
+                    <li><div class="dropdown">
+                        <a onclick="myFunction()" class="dropbtn">Login miembros</a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <form name="login" action="admin/area-usuario.html" method="POST">
+                            <input type="text" class="input-login" name="usuario"  maxlength="50">
+                            <input type="password" class="input-login" name="contrasena" maxlength="50">
+                            <a href="admin/area-usuario."><input type="submit" value="Login"  name="enviar" /></a>
+                            </form>
+                        </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </header>
-        <section id="content">
+        <section class="content" id="content">
+            <div class="clearflx">&nbsp;</div>
             <div id="ImgPrincipal"><img src="Imagenes/img1.jpg" alt="Imagen"></div>
             <div id="lineanoticias"><h2>Noticias</h2></div>
             <div class="contenedor" id="cont1">
-                <div class="cuadro" >
-                    <img src="Imagenes/img3.png">
-                    <div class="footcuadro"><h4>Titulo noticia</h4></div>
-                </div>
-                <div class="cuadro" >
-                    <img src="Imagenes/img3.png">
-                    <div class="footcuadro"><h4>Titulo noticia</h4></div>
-                </div>
-                <div class="cuadro" >
-                    <img src="Imagenes/img3.png">
-                    <div class="footcuadro"><h4>Titulo noticia</h4></div>
-                </div>
-                <div class="cuadro" >
-                    <img src="Imagenes/img3.png">
-                    <div class="footcuadro"><h4>Titulo noticia</h4></div>
-                </div>
+                <a href="Noticias/noticia-basta-maltrato-granjas.html"><div class="cuadro">
+                    <img src="Imagenes/granja.jpg">
+                    <div class="footcuadro"><h4>Basta de maltrato en las granjas de animales</h4></div>
+                </div></a>
+                <a href="Noticias/noticia-vida-emocional-animales-granja.html"><div class="cuadro">
+                    <img src="Imagenes/vaca_cerdo_pollo.jpg">
+                    <div class="footcuadro"><h4>Basta de maltrato en las granjas de animales</h4></div>
+                </div></a>
+                <a href="Noticias/noticia-basta-maltrato-granjas.html"><div class="cuadro">
+                    <img src="Imagenes/granja.jpg">
+                    <div class="footcuadro"><h4>Basta de maltrato en las granjas de animales</h4></div>
+                </div></a>
+                <a href="Noticias/noticia-vida-emocional-animales-granja.html"><div class="cuadro">
+                    <img src="Imagenes/vaca_cerdo_pollo.jpg">
+                    <div class="footcuadro"><h4>Basta de maltrato en las granjas de animales</h4></div>
+                </div></a>
             </div>
             <div id="lineaactividades"><h2>Actividades</h2></div>
             <div class="contenedor" id="cont2">
-                <div class="cuadro" >
-                    <img src="Imagenes/img3.png">
-                    <div class="footcuadro"><h4>Titulo actividad</h4></div>
-                </div>
+                <a href="Actividades/actividad-contra-transporte-animales-experimentacion.html"><div class="cuadro" >
+                    <img src="Imagenes/monos-jaula.jpg">
+                    <div class="footcuadro"><h4>Ayúdanos a que AIR France deje de transportar animales para experimentación</h4></div>
+                </div></a>
                 <div class="cuadro" >
                     <img src="Imagenes/img3.png">
                     <div class="footcuadro"><h4>Titulo actividad</h4></div>
@@ -66,6 +79,7 @@ and open the template in the editor.
                     <div class="footcuadro"><h4>Titulo actividad</h4></div>
                 </div>
             </div>
+            <div class="clearflx">&nbsp</div>
         </section>
         <footer>Pie de pagina</footer>
     </body>

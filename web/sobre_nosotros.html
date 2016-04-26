@@ -7,10 +7,12 @@ and open the template in the editor.
 <html>
     <head>
         <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="stylesheet" href="pruebacss.css" type="text/css"/>
 
-        <title>Pagina de prueba 3</title>
+        <title>Asociacion para la defensa de los animales</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/desplegable.js"></script>
     </head>
     <body>
         <header >
@@ -18,15 +20,57 @@ and open the template in the editor.
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="" style="background-color: #ff33ff">Sobre nosotros</a></li>
+                    <li><a href="" style="background-color: white">Sobre nosotros</a></li>
                     <li><a href="noticias.html">Noticias</a></li>
                     <li><a href="actividades.html">Actividades</a></li>
                     <li><a href="apunt_donacion.html">Apuntate/Donaciones</a></li>
-                    <li><a href="#">Login miembros</a></li>
+                    <li><div class="dropdown">
+                        <a onclick="myFunction()" class="dropbtn">Login miembros</a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <form name="login" action="admin/area-usuario.html" method="POST">
+                            <input type="text" class="input-login" name="usuario"  maxlength="50">
+                            <input type="password" class="input-login" name="contrasena" maxlength="50">
+                            <input type="submit" value="Login"  name="enviar" />
+                            </form>
+                        </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </header>
-        <section id="content">
+        <section class="content" id="content">
+            <div id="lineaPrincipal"><h2>Sobre Nosotros</h2></div>
+		<div class="cuadrosn">
+			<h3>Quién es ADA</h3>
+			<span>
+				"Muy buenas a todas las personas que han decidido entrar en esta página y ser partícipes de nuestra web.
+					Ahora mismo os estaréis preguntando quienes somos y que es lo que hacemos.
+					Pues veras, para empezar, nosotros somos la Asociación para la Defensa de los Animales (ADA). Somos una 
+					de las muchas asociaciones españolas que se dedican a garantizar una serie de derechos básicos para los animales."
+			</span>
+			<h3>Qué hace ADA</h3>
+			<span>
+				"Realizamos manifestaciones contra la violencia animal, la sobreexplotación, la desnutrición y las prácticas ilegales.
+					Ponemos denuncias a aquellas organizaciones o personas a las que consideramos negativas para un buen desarrollo de los animales.
+					Tenemos programadas excursiones a lo largo del año para visitar reservas naturales y mostrar a las personas como se comportan los animales en libertad. 
+					Hacemos recaudaciones y ofrecemos publicidad a protectoras y albergues de animales para ayudarles a conseguir un mayor número de adopciones.
+					Realizamos terapias con los animales de distintas protectoras y albergues para acercar y familiarizar a los niños y personas discapacitadas a los animales."
+			</span>
+		</div>
+		<div class="cuadrosn"><h3>Como lo logramos</h3>
+			<span>
+				"Nos financiamos en gran parte de contribuciones voluntarias, pero también obtenemos capitales de entidades públicas y privadas.
+					Tenemos además firmados muchos de convenios con protectoras y albergues de animales."
+			</span>
+			<h3>Donde puedes encontrarnos</h3>
+			<span>
+				"ADA está presente en las 17 comunidades autónomas españolas, con sede principal en Valladolid.
+					A las oficinas que ADA tiene en cada autonomía, los comités autonómicos, se suman las oficinas de los comités provinciales.
+					La organización también tiene presencia en protectoras y albergues, que gracias al personal voluntario apoyan la labor de ADA
+					y permiten que la organización esté más cerca de los socios y aliados."
+			</span>
+		</div>
+                <div class="clearflx">&nbsp</div>
         </section>
         <footer>Pie de pagina</footer>
     </body>
